@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <script src='tasks.js'></script>
     <script>
         //1. Написать функцию, преобразующую число в объект. Передавая на вход число от 0 до 999, мы должны получить на выходе объект, в котором в соответствующих свойствах описаны единицы, десятки и сотни. Например, для числа 245 мы должны получить следующий объект: {‘единицы’: 5, ‘десятки’: 4, ‘сотни’: 2}. Если число превышает 999, необходимо выдать соответствующее сообщение с помощью console.log и вернуть пустой объект.
         /*
@@ -35,7 +36,95 @@
 
         //2. Для игры, реализованной на уроке, добавить возможность вывода хода номер n (номер задается пользователем).
 
+        let event, ok;
+        let answersSave = true;
+        let answers = [];
+
+        function Answer(text, answer) {
+            this.text = text;
+            this.answer = answer;
+        }
+
+        function ScreenView(text, countAnswer) {
+            do {
+                ok = false;
+                event = +prompt(text + '-1: Выход из игры.');
+                if (event == -1) {
+                    break;
+                } else {
+                    ok = isAnswer(countAnswer, event);
+                }
+            } while (!ok);
+            if (answersSave) {
+                let answer = new Answer(text, event);
+                answers.push(answer);
+            }
+        }
+
+        ScreenView(questionsAndAnswers.a00 + questionsAndAnswers.a1 + questionsAndAnswers.a2, questionsAndAnswers.a0);
+        switch (event) {
+            case 1:
+                ScreenView(questionsAndAnswers.b00 + questionsAndAnswers.b1 + questionsAndAnswers.b2,
+                    questionsAndAnswers.b0);
+                switch (event) {
+                    case 1:
+                    case 2:
+                        ScreenView(questionsAndAnswers.d00 + questionsAndAnswers.d1 + questionsAndAnswers.d2,
+                            questionsAndAnswers.d0);
+                        break;
+                    case -1:
+                        break;
+                    default:
+                        alert('Ошибка!');
+                }
+                break;
+            case 2:
+                ScreenView(questionsAndAnswers.c00 + questionsAndAnswers.c1 + questionsAndAnswers.c2,
+                    questionsAndAnswers.c0);
+                switch (event) {
+                    case 1:
+                    case 2:
+                        ScreenView(questionsAndAnswers.d00 + questionsAndAnswers.d1 + questionsAndAnswers.d2,
+                            questionsAndAnswers.d0);
+                        break;
+                    case -1:
+                        break;
+                    default:
+                        alert('Ошибка!');
+                }
+                break;
+            case -1:
+                break;
+            default:
+                alert('Ошибка!');
+        }
+
+        alert('Спасибо за игру!');
+
+        answersSave = false;
+        do {
+            ScreenView('Хотите посмотреть историю? Введите номер хода n из ' + answers.lenght + '. ', answers.lenght);
+            if (event != -1) {
+                alert(answers[event - 1].text + '\nВы выбрали ответ: ' + answers[event - 1].answer);
+            }
+        } while (event != -1);
+        alert('До свидания!');
+
+        function isAnswer(q, event) {
+            if (isNaN(event) || !isFinite(event)) {
+                alert('Введён недопустимый символ!');
+                return false;
+            } else if (event < 1 || event > q) {
+                alert('Введённое число выходит из допустимого диапазона!');
+                return false;
+            }
+            return true;
+        }
+
+        //При запросе просмотра истории, видим - "Введите номер хода n из undefined." Не успел понять, почему счётчик ходов на этом экране, не показывает значений. Хотя просмотр выбранного хода работает нормально.
+
     </script>
+
 </body>
 
 </html>
