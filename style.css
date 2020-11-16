@@ -1,0 +1,58 @@
+body {
+  margin: 0 auto;
+  width: 700px;
+  height: 700px;
+  margin-top: 50px;
+}
+
+table {
+  width: 650px;
+  height: 650px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 35px;
+  background-color: white;
+  color: #5c3b0b;
+  border: 5px solid #1d9aab;
+  border-radius: 5px;
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+table tr:nth-child(even) td:nth-child(odd) {
+  background-color: #1a1817;
+}
+
+table tr:nth-child(odd) td:nth-child(even) {
+  background-color: #1a1817;
+}
+
+table tr:last-child td:nth-child(odd),
+table tr:first-child td:nth-child(even) {
+  background-color: #fafaeb;
+}
+
+table tr:nth-child(even) td:first-child {
+  background-color: #fafaeb;
+}
+
+table tr:nth-child(odd) td:last-child {
+  background-color: #fafaeb;
+}
+
+table tr:first-child td:nth-child(-n + 10) {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+table td {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+table td:last-child {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/*# sourceMappingURL=style.css.map */
