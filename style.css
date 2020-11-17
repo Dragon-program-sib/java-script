@@ -11,37 +11,37 @@ table {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 35px;
   background-color: white;
-  color: #5c3b0b;
-  border: 5px solid #1d9aab;
+  color: black;
+  text-shadow: 1px 1px 1px white, 0 0 7px white;
+  border: 10px solid #258f63;
   border-radius: 5px;
   margin-left: 24px;
   margin-top: 24px;
 }
 
-table tr:nth-child(even) td:nth-child(odd) {
-  background-color: #1a1817;
-}
-
+table tr:nth-child(even) td:nth-child(odd),
 table tr:nth-child(odd) td:nth-child(even) {
   background-color: #1a1817;
 }
 
-table tr:last-child td:nth-child(odd),
-table tr:first-child td:nth-child(even) {
-  background-color: #fafaeb;
-}
-
-table tr:nth-child(even) td:first-child {
-  background-color: #fafaeb;
-}
-
-table tr:nth-child(odd) td:last-child {
-  background-color: #fafaeb;
-}
-
-table tr:first-child td:nth-child(-n + 10) {
+table tr:first-child td:nth-child(-n + 10),
+table td:last-child {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+table tr:first-child td:nth-child(-n + 10),
+table tr:last-child td:nth-child(-n + 10),
+table tr:last-child td:nth-child(odd),
+table tr:first-child td:nth-child(even),
+table tr:nth-child(even) td:first-child,
+table tr:nth-child(odd) td:last-child,
+table td:first-child,
+table td:last-child {
+  background-color: sandybrown;
+  border-radius: 5px;
+  color: darkred;
+  text-shadow: none;
 }
 
 table td {
@@ -49,10 +49,5 @@ table td {
   height: 60px;
   text-align: center;
   vertical-align: middle;
-}
-
-table td:last-child {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 /*# sourceMappingURL=style.css.map */

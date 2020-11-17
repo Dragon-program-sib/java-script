@@ -1,7 +1,7 @@
 function chessBoard() {
     let newTable = document.createElement('table');
 
-    letters = ['', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', ''],
+    letters = ['', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', ''],
         figuresBlack1 = ['8', '&#9820;', '&#9822;', '&#9821;', '&#9819;', '&#9818;', '&#9821;', '&#9822;',
             '&#9820;',
             '8'
