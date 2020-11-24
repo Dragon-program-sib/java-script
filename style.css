@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+.img_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 1000px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.img_block .img_small {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.img_block .img_small:hover {
+  opacity: 0.8;
+}
+
+.img_block .img_small:active {
+  opacity: 0.9;
+}
+
+.big_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.big_img .button1_nav,
+.big_img .button2_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.big_img .button_left,
+.big_img .button_right {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: darkseagreen;
+  color: turquoise;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0.8;
+}
+
+.big_img .button1_nav {
+  margin-right: 900px;
+}
+
+.big_img .button2_nav {
+  margin-left: 900px;
+}
+
+.big_img .button1_nav:hover,
+.big_img .button2_nav:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.big_img .button1_nav:active,
+.big_img .button2_nav:active {
+  cursor: pointer;
+  opacity: 0.9;
+}
+/*# sourceMappingURL=style.css.map */
