@@ -1,0 +1,119 @@
+#snake-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.score_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  color: red;
+  font-weight: 900;
+  border-bottom: 1px solid red;
+  margin-bottom: 5px;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5px;
+}
+
+.snake-renew,
+.snake-start,
+.snake-start-nonactive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 154px;
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  padding: 15px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.snake-renew:hover,
+.snake-start:hover,
+.snake-start-nonactive:hover {
+  opacity: 0.7;
+}
+
+.snake-renew:active,
+.snake-start:active,
+.snake-start-nonactive:active {
+  opacity: 0.9;
+}
+
+.snake-start-nonactive {
+  background-color: #005300;
+}
+
+.game-table {
+  border-collapse: collapse;
+  background-color: #3e3e3e;
+}
+
+td.game-table-cell {
+  width: 16px;
+  height: 16px;
+  border: 1px dotted #eee;
+}
+
+.snake-unit {
+  background-color: white;
+}
+
+.food-unit {
+  background-color: aqua;
+}
+
+.problem-unit {
+  background-color: red;
+}
+
+.wrap {
+  margin: 30px auto 0;
+}
+/*# sourceMappingURL=style.css.map */

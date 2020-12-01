@@ -1,0 +1,83 @@
+#snake-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    color: red;
+    font-weight: 900;
+    border-bottom: 1px solid red;
+    margin-bottom: 5px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.snake-renew,
+.snake-start,
+.snake-start-nonactive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 154px;
+    border-radius: 5px;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    padding: 15px;
+    transition: all 0.2s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &:active {
+        opacity: 0.9;
+    }
+}
+
+.snake-start-nonactive {
+    background-color: #005300;
+}
+
+.game-table {
+    border-collapse: collapse;
+    background-color: #3e3e3e;
+}
+
+td.game-table-cell {
+    width: 16px;
+    height: 16px;
+    border: 1px dotted #eee;
+}
+
+.snake-unit {
+    background-color: white;
+}
+
+.food-unit {
+    background-color: aqua;
+}
+
+.problem-unit {
+    background-color: red;
+}
+
+.wrap {
+    margin: 30px auto 0;
+}
