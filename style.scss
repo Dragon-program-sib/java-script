@@ -87,3 +87,64 @@
         opacity: 0.9;
     }
 }
+
+//basket
+
+.heading {
+    display: flex;
+    margin: 30px;
+}
+
+.catalog {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div_item {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: 1px solid green;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 20px;
+    transition: all 0.1s;
+
+    &:hover {
+        opacity: 0.5;
+    }
+
+    &:active {
+        opacity: 0.9;
+    }
+}
+
+.selected_products {
+    width: 900px;
+    font-size: 20px;
+    line-height: 20px;
+    color: mediumblue;
+    border-bottom: 1px solid green;
+    margin-left: 50px;
+}
+
+.sum {
+    font-weight: 600;
+    font-size: 18px;
+    color: red;
+    margin-left: 50px;
+}
+
+td {
+    text-align: left;
+}

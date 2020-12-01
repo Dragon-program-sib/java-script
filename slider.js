@@ -24,7 +24,7 @@ function displayLargeImage(event){
     }
 };
 
-let sliderArr = ['siberia-1.jpg', 'siberia-2.jpg'];
+let sliderArr = ['siberia-1.jpg', 'siberia-2.jpg'];//В идеале, здесь можно указать значение, для обращения к любому количеству помещённых в директорию изображений, без визуального перечисления каждого.
 let currentImg = 0;
 
 function playSlider(){
