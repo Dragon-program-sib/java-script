@@ -321,7 +321,7 @@ function finishTheGame() {
     clearInterval(snake_timer);
     clearInterval(food_timer);
     clearInterval(problem_timer);
-    alert('Вы проиграли! Ваш результат: ' + score.toString());
+    alert('Змейка разбилась об препятствие.((( Съедено еды: ' + score.toString() + ' (порц.).');
 };
 
 /**
